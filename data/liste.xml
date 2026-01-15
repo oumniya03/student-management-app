@@ -1,0 +1,23 @@
+<students>
+    <student>
+        <nom>berrada</nom>
+        <prenom>mohammed</prenom>
+        <filiere>Machine learning avancé</filiere>
+        <age>24</age>
+        <email>mohammed@test.com</email>
+    </student>
+    <student>
+        <nom>oumniya</nom>
+        <prenom>Oumniya</prenom>
+        <filiere>Analyse Financière</filiere>
+        <age>22</age>
+        <email>oumniya@test.com</email>
+    </student>
+    <student>
+        <nom>Alami</nom>
+        <prenom>Karim</prenom>
+        <filiere>Cybersécurité</filiere>
+        <age>25</age>
+        <email>karim@test.com</email>
+    </student>
+</students>

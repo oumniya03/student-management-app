@@ -1,0 +1,35 @@
+version: '3.8'
+services:
+  # 1. Base de données
+  mongo:
+    image: mongo:latest
+    container_name: students_db
+    ports:
+      - "27017:27017"
+    volumes:
+      # Pour préserver les données entre les arrêts
+      - mongo-data:/data/db
+  # 2. API Backend (Node.js/Express)
+  backend:
+    build: ./backend  # Utilise le Dockerfile dans le dossier backend
+    container_name: students_backend
+    ports:
+      - "5000:5000"
+    environment:
+      # L'URI MongoDB utilise le nom du service "mongo" comme hôte
+      - MONGO_URI=mongodb://mongo:27017/studentsDB
+      - JWT_SECRET=VOTRE_SECRET_FORT
+    volumes:
+      - ./backend:/app  # Montage de volume pour le développement
+    depends_on:
+      - mongo # Assure que Mongo démarre avant le Backend
+  # 3. Frontend (React/Nginx)
+  frontend:
+    build: ./frontend # Utilise le Dockerfile dans le dossier frontend
+    container_name: students_frontend
+    ports:
+      - "3000:80" # Mappe le port 80 du conteneur (Nginx) sur le port 3000 de votre machine
+    depends_on:
+      - backend # Assure que le Backend démarre avant le Frontend
+volumes:
+  mongo-data: # Définition du volume de données pour MongoDB
