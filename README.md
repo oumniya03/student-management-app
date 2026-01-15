@@ -219,7 +219,7 @@ JWT_SECRET=votre_secret_key
 **Oumniya Moutaouakil**
 - Master's Student in Advanced Machine Learning & Multimedia Intelligence.
 - GitHub: [@oumniya03](https://github.com/oumniya03)
-- Project: []()
+- Project: [student-management-app](https://github.com/oumniya03/student-management-app.git)
 
 ## 🔗 Ressources
 
