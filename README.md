@@ -13,6 +13,13 @@ Cette application permet la gestion complète des données d'étudiants avec les
 - Interface utilisateur moderne et responsive
 - Déploiement conteneurisé avec Docker
 
+## Interface
+<img width="295" height="191" alt="Image1" src="https://github.com/user-attachments/assets/ff255f71-e8c1-44da-9158-0bfdf8cf0f10" />
+<img width="400" height="202" alt="Image2" src="https://github.com/user-attachments/assets/e637bed2-b2d7-48b0-a201-6fb2ec3370b3" />
+
+
+<img width="860" height="401" alt="image" src="https://github.com/user-attachments/assets/7da3c60b-42f3-4049-9f79-a48ed2877612" />
+
 ## ✨ Fonctionnalités
 
 - **Gestion CRUD complète** : Créer, lire, modifier et supprimer des étudiants
